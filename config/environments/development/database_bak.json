@@ -1,0 +1,14 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "mongoose",
+      "settings": {
+        "uri": "mongodb://10.0.1.26:51801,10.0.1.26:51802,10.0.1.26:51803,10.0.1.26:51804/aimei_website?replicaSet=rs0&readPreference=primaryPreferred"
+      },
+      "options": {
+        "authenticationDatabase": "aamtech"
+      }
+    }
+  }
+}

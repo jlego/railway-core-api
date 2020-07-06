@@ -1,0 +1,19 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "mongoose",
+      "settings": {
+        "database": "aimei_website",
+        "host": "172.16.70.4",
+        "srv": false,
+        "port": 28024,
+        "username": "aimei_website_rw",
+        "password": "aimei_website_2020"
+      },
+      "options": {
+        "authenticationDatabase": ""
+      }
+    }
+  }
+}

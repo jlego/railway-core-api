@@ -1,0 +1,14 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "mongoose",
+      "settings": {
+        "uri": "mongodb://10.0.1.26:27017/strapi_test"
+      },
+      "options": {
+        "authenticationDatabase": ""
+      }
+    }
+  }
+}
