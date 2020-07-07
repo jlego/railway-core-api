@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "projects",
+  "info": {
+    "name": "project"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "status": {
+      "type": "string"
+    },
+    "setting": {
+      "type": "json"
+    }
+  }
+}
