@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 type Category {
   name: String
   pId: String
@@ -78,6 +79,8 @@ type createCategoryPayload {
   category: Category
 }
 
+=======
+>>>>>>> 9ae0fbe57fc670140b49caafe9bd941dbc74ca45
 input createProjectInput {
   data: ProjectInput
 }
@@ -116,6 +119,7 @@ A date-time string at UTC, such as 2007-12-03T10:15:30Z, compliant with the
 """
 scalar DateTime
 
+<<<<<<< HEAD
 input deleteCategoryInput {
   where: InputID
 }
@@ -124,6 +128,8 @@ type deleteCategoryPayload {
   category: Category
 }
 
+=======
+>>>>>>> 9ae0fbe57fc670140b49caafe9bd941dbc74ca45
 input deleteProjectInput {
   where: InputID
 }
@@ -148,12 +154,15 @@ type deleteUserPayload {
   user: UsersPermissionsUser
 }
 
+<<<<<<< HEAD
 input editCategoryInput {
   name: String
   pId: String
   type: ENUM_CATEGORY_TYPE
 }
 
+=======
+>>>>>>> 9ae0fbe57fc670140b49caafe9bd941dbc74ca45
 input editFileInput {
   name: String
   hash: String
@@ -193,10 +202,13 @@ input editUserInput {
   role: ID
 }
 
+<<<<<<< HEAD
 enum ENUM_CATEGORY_TYPE {
   device
 }
 
+=======
+>>>>>>> 9ae0fbe57fc670140b49caafe9bd941dbc74ca45
 input FileInput {
   name: String!
   hash: String!
@@ -222,12 +234,18 @@ scalar JSON
 """The `Long` scalar type represents 52-bit integers"""
 scalar Long
 
+<<<<<<< HEAD
 union Morph = UsersPermissionsMe | UsersPermissionsMeRole | UsersPermissionsLoginPayload | Category | createCategoryPayload | updateCategoryPayload | deleteCategoryPayload | CategoryConnection | CategoryAggregator | CategoryGroupBy | CategoryConnectionName | CategoryConnectionPId | CategoryConnectionType | CategoryConnection_id | CategoryConnectionId | CategoryConnectionCreatedAt | CategoryConnectionUpdatedAt | Project | createProjectPayload | updateProjectPayload | deleteProjectPayload | ProjectConnection | ProjectAggregator | ProjectGroupBy | ProjectConnectionTitle | ProjectConnectionDescription | ProjectConnectionStatus | ProjectConnectionSetting | ProjectConnection_id | ProjectConnectionId | ProjectConnectionCreatedAt | ProjectConnectionUpdatedAt | UploadFile | UploadFileConnection | UploadFileAggregator | UploadFileGroupBy | UploadFileConnectionName | UploadFileConnectionHash | UploadFileConnectionSha256 | UploadFileConnectionExt | UploadFileConnectionMime | UploadFileConnectionSize | UploadFileConnectionUrl | UploadFileConnectionProvider | UploadFileConnectionProvider_metadata | UploadFileConnection_id | UploadFileConnectionId | UploadFileConnectionCreatedAt | UploadFileConnectionUpdatedAt | UsersPermissionsPermission | UsersPermissionsRole | createRolePayload | updateRolePayload | deleteRolePayload | UsersPermissionsRoleConnection | UsersPermissionsRoleAggregator | UsersPermissionsRoleGroupBy | UsersPermissionsRoleConnectionName | UsersPermissionsRoleConnectionDescription | UsersPermissionsRoleConnectionType | UsersPermissionsRoleConnection_id | UsersPermissionsRoleConnectionId | UsersPermissionsRoleConnectionCreatedAt | UsersPermissionsRoleConnectionUpdatedAt | UsersPermissionsUser | createUserPayload | updateUserPayload | deleteUserPayload | UsersPermissionsUserConnection | UsersPermissionsUserAggregator | UsersPermissionsUserGroupBy | UsersPermissionsUserConnectionUsername | UsersPermissionsUserConnectionEmail | UsersPermissionsUserConnectionProvider | UsersPermissionsUserConnectionConfirmed | UsersPermissionsUserConnectionBlocked | UsersPermissionsUserConnectionRole | UsersPermissionsUserConnection_id | UsersPermissionsUserConnectionId | UsersPermissionsUserConnectionCreatedAt | UsersPermissionsUserConnectionUpdatedAt
 
 type Mutation {
   createCategory(input: createCategoryInput): createCategoryPayload
   updateCategory(input: updateCategoryInput): updateCategoryPayload
   deleteCategory(input: deleteCategoryInput): deleteCategoryPayload
+=======
+union Morph = UsersPermissionsMe | UsersPermissionsMeRole | UsersPermissionsLoginPayload | Project | createProjectPayload | updateProjectPayload | deleteProjectPayload | ProjectConnection | ProjectAggregator | ProjectGroupBy | ProjectConnectionTitle | ProjectConnectionDescription | ProjectConnectionStatus | ProjectConnectionSetting | ProjectConnection_id | ProjectConnectionId | ProjectConnectionCreatedAt | ProjectConnectionUpdatedAt | UploadFile | UploadFileConnection | UploadFileAggregator | UploadFileGroupBy | UploadFileConnectionName | UploadFileConnectionHash | UploadFileConnectionSha256 | UploadFileConnectionExt | UploadFileConnectionMime | UploadFileConnectionSize | UploadFileConnectionUrl | UploadFileConnectionProvider | UploadFileConnectionProvider_metadata | UploadFileConnection_id | UploadFileConnectionId | UploadFileConnectionCreatedAt | UploadFileConnectionUpdatedAt | UsersPermissionsPermission | UsersPermissionsRole | createRolePayload | updateRolePayload | deleteRolePayload | UsersPermissionsRoleConnection | UsersPermissionsRoleAggregator | UsersPermissionsRoleGroupBy | UsersPermissionsRoleConnectionName | UsersPermissionsRoleConnectionDescription | UsersPermissionsRoleConnectionType | UsersPermissionsRoleConnection_id | UsersPermissionsRoleConnectionId | UsersPermissionsRoleConnectionCreatedAt | UsersPermissionsRoleConnectionUpdatedAt | UsersPermissionsUser | createUserPayload | updateUserPayload | deleteUserPayload | UsersPermissionsUserConnection | UsersPermissionsUserAggregator | UsersPermissionsUserGroupBy | UsersPermissionsUserConnectionUsername | UsersPermissionsUserConnectionEmail | UsersPermissionsUserConnectionProvider | UsersPermissionsUserConnectionConfirmed | UsersPermissionsUserConnectionBlocked | UsersPermissionsUserConnectionRole | UsersPermissionsUserConnection_id | UsersPermissionsUserConnectionId | UsersPermissionsUserConnectionCreatedAt | UsersPermissionsUserConnectionUpdatedAt
+
+type Mutation {
+>>>>>>> 9ae0fbe57fc670140b49caafe9bd941dbc74ca45
   createProject(input: createProjectInput): createProjectPayload
   updateProject(input: updateProjectInput): updateProjectPayload
   deleteProject(input: deleteProjectInput): deleteProjectPayload
@@ -336,9 +354,12 @@ input ProjectInput {
 }
 
 type Query {
+<<<<<<< HEAD
   category(id: ID!): Category
   categories(sort: String, limit: Int, start: Int, where: JSON): [Category]
   categoriesConnection(sort: String, limit: Int, start: Int, where: JSON): CategoryConnection
+=======
+>>>>>>> 9ae0fbe57fc670140b49caafe9bd941dbc74ca45
   project(id: ID!): Project
   projects(sort: String, limit: Int, start: Int, where: JSON): [Project]
   projectsConnection(sort: String, limit: Int, start: Int, where: JSON): ProjectConnection
@@ -368,6 +389,7 @@ input RoleInput {
 """A time string with format: HH:mm:ss.SSS"""
 scalar Time
 
+<<<<<<< HEAD
 input updateCategoryInput {
   where: InputID
   data: editCategoryInput
@@ -377,6 +399,8 @@ type updateCategoryPayload {
   category: Category
 }
 
+=======
+>>>>>>> 9ae0fbe57fc670140b49caafe9bd941dbc74ca45
 input updateProjectInput {
   where: InputID
   data: editProjectInput
